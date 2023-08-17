@@ -16,7 +16,9 @@ function Calculator() {
         setResult(eval(result).toString());
     }
   return (
+  
     <div className='calc'>
+        <form>
         <input type="text" placeholder='0' id="answer" value={result}/>
         <input type="button" value="9" className='button' onClick={clickHandler}/>
         <input type="button" value="8" className='button' onClick={clickHandler}/>
@@ -36,7 +38,7 @@ function Calculator() {
         <input type="button" value="%" className='button' onClick={clickHandler}/>
         <input type="button" value="Clear" className='button1' onClick={clearDisplay}/>
         <input type="button" value="=" className='button1' onClick={calculate}/>
-      
+        </form>
     </div>
   )
 }
